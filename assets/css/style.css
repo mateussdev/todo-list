@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  border: none;
+
+  font-size: 1.25rem;
+}
+
+body {
+  background: #070719;
+  color: #fff;
+}
+
+header {
+  background-color: #2e64fe;
+  color: #fff;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.container .new-task {
+  width: 500px;
+  margin: 0 auto;
+
+  display: flex;
+}
+
+.container .new-task .input-task {
+  width: calc(100% - 50px);
+  padding: 0.625rem;
+  font-size: 1.25rem;
+
+  border-radius: 8px 0 0 8px;
+  border: none;
+}
+
+.container .new-task .btn-add-task {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 0 8px 8px 0;
+
+  background-color: #2e64fe;
+  color: #fff;
+
+  cursor: pointer;
+}
+
+.container .tasks {
+  padding: 1.25rem;
+
+  font-size: 1.125rem;
+}
+
+.tasks li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.delete {
+  font-size: 2rem;
+  text-align: center;
+
+  border: none;
+  background: transparent;
+  color: #fff;
+
+  padding-inline: 2px;
+
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+@media screen and (max-width: 500px) {
+  .container .new-task {
+    max-width: 100%;
+  }
+
+  .container .new-task .input-task {
+    max-width: calc(100% - 50px);
+  }
+}
